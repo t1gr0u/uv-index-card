@@ -28,7 +28,8 @@ console.info(
 (window as any).customCards.push({
   type: 'uv-index-card',
   name: 'UV Index Card',
-  description: 'A template custom card for you to create something awesome',
+  preview: true,
+  description: 'A Lovelace card that shows a the UV index and risk level for Home Assistant',
 });
 
 // TODO Name your custom element
