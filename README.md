@@ -1,4 +1,4 @@
-# Boilerplate Card by [@iantrich](https://www.github.com/iantrich)
+# UV Index Card by [@t1gr0u](https://www.github.com/t1gr0u)
 
 A community driven boilerplate of best practices for Home Assistant Lovelace custom cards
 
@@ -12,11 +12,6 @@ A community driven boilerplate of best practices for Home Assistant Lovelace cus
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
-## Support
-
-Hey dude! Help me out for a couple of :beers: or a :coffee:!
-
-[![coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/zJtVxUAgH)
 
 ## Options
 

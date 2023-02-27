@@ -1,5 +1,5 @@
 {
-    "name": "Boilerplate Card",
+    "name": "UV Index Card",
     "render_readme": true,
-    "filename": "boilerplate-card.js"
+    "filename": "uv-index-card.js"
 }

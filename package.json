@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate-card",
-  "version": "1.4.1",
-  "description": "Lovelace boilerplate-card",
+  "name": "uv-index-card",
+  "version": "1.0.0",
+  "description": "Lovelace uv-index-card",
   "keywords": [
     "home-assistant",
     "homeassistant",
@@ -10,9 +10,9 @@
     "lovelace",
     "custom-cards"
   ],
-  "module": "boilerplate-card.js",
-  "repository": "git@github.com:custom_cards/boilerplate-card.git",
-  "author": "Ian Richardson <iantrich@gmail.com>",
+  "module": "uv-index-card.js",
+  "repository": "git@github.com:t1gr0u/uv-index-card.git",
+  "author": "T1gr0u <tigrou.m@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@lit-labs/scoped-registry-mixin": "^1.0.0",
@@ -47,7 +47,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-serve": "^1.1.0",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.4.3"
   },
   "resolutions": {
