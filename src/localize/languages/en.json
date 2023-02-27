@@ -3,6 +3,15 @@
     "version": "Version",
     "invalid_configuration": "Invalid configuration",
     "show_warning": "Show Warning",
-    "show_error": "Show Error"
+    "show_error": "Show Error",
+    "uv_index": "UV Index",
+    "uv_risk": "UV Risk"
+  },
+  "uv_levels": {
+    "low": "Low",
+    "moderate": "Moderate",
+    "high": "High",
+    "very_high": "Very High",
+    "extreme": "Extreme"
   }
 }
