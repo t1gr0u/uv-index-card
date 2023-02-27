@@ -1,27 +1,68 @@
-# UV Index Card by [@t1gr0u](https://www.github.com/t1gr0u)
+# UV Index card
 
-A community driven boilerplate of best practices for Home Assistant Lovelace custom cards
+A custom Lovelace card that displays the UV index and risk level in [Home Assistant](https://home-assistant.io/).
 
-[![GitHub Release][releases-shield]][releases]
-[![License][license-shield]](LICENSE.md)
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
+[![GitHub Release][releases-shield]][releases-link] [![GitHub Release Date][release-date-shield]][releases-link] [![GitHub Releases][latest-download-shield]][traffic-link] [![GitHub Releases][total-download-shield]][traffic-link]
 
-![Project Maintenance][maintenance-shield]
-[![GitHub Activity][commits-shield]][commits]
+[![HACS Badge][hacs-shield]][hacs-link] [![HomeAssistant][home-assistant-shield]][home-assistant-link] [![License][license-shield]][license-link]
 
-[![Discord][discord-shield]][discord]
-[![Community Forum][forum-shield]][forum]
+![Project Maintenance][maintenance-shield] [![GitHub Activity][activity-shield]][activity-link] [![Open bugs][bugs-shield]][bugs-link] [![Open enhancements][enhancements-shield]][enhancement-link]
+
+[![Community Forum][forum-shield]][forum-link]
+
+## Installation
+
+### [HACS](https://hacs.xyz/) (Home Assistant Community Store)
+
+1. Go to HACS page on your Home Assistant instance
+1. Select `Frontend`
+1. Press add icon and search for `uv-index`
+1. Select UV Index Card repo and install
+1. Force refresh the Home Assistant page (<kbd>Ctrl</kbd> + <kbd>F5</kbd>)
+1. Add uv-index-card to your page
+
+### Manual
+
+1. Download the 'uv-index-card.js' from the latest [release](https://github.com/t1gr0u/uv-index-card/releases) (with right click, save link as)
+1. Place the downloaded file on your Home Assistant machine in the `config/www` folder (when there is no `www` folder in the folder where your `configuration.yaml` file is, create it and place the file there)
+1. In Home Assistant go to `Configuration->Lovelace Dashboards->Resources` (When there is no `resources` tag on the `Lovelace Dashboard` page, enable advanced mode in your account settings, and retry this step)
+1. Add a new resource
+   1. Url = `/local/uv-index-card.js`
+   1. Resource type = `module`
+1. Force refresh the Home Assistant page (<kbd>Ctrl</kbd> + <kbd>F5</kbd>)
+1. Add uv-index-card to your page
+
+## Using the card
+
+- Add the card with the visual editor
+- Or add the card manually with the following (minimal) configuration:
+
+```yaml
+type: custom:uv-index-card
+entity: sensor.weather_station_uv
+```
+
+## Lovelace Examples
+
+### Default
+
+```yaml
+type: custom:uv-index-card
+entity: sensor.weather_station_uv
+```
+
+![Default](https://github.com/t1gr0u/uv-index-card/blob/master/docs/images/uv-index-card.png?raw=true)
 
 
 ## Options
 
 | Name              | Type    | Requirement  | Description                                 | Default             |
 | ----------------- | ------- | ------------ | ------------------------------------------- | ------------------- |
-| type              | string  | **Required** | `custom:boilerplate-card`                   |
-| name              | string  | **Optional** | Card name                                   | `Boilerplate`       |
+| type              | string  | **Required** | `custom:uv-index-card`                      |                     |
+| name              | string  | **Optional** | Card name                                   | `UV Index`          |
 | show_error        | boolean | **Optional** | Show what an error looks like for the card  | `false`             |
 | show_warning      | boolean | **Optional** | Show what a warning looks like for the card | `false`             |
-| entity            | string  | **Optional** | Home Assistant entity ID.                   | `none`              |
+| entity            | string  | **Required** | Home Assistant entity ID.                   | `none`              |
 | tap_action        | object  | **Optional** | Action to take on tap                       | `action: more-info` |
 | hold_action       | object  | **Optional** | Action to take on hold                      | `none`              |
 | double_tap_action | object  | **Optional** | Action to take on double tap                | `none`              |
@@ -35,80 +76,48 @@ A community driven boilerplate of best practices for Home Assistant Lovelace cus
 | url             | string | **Optional** | URL to open on click when action is url. The URL will open in a new tab                                                                | `none`      |
 | service         | string | **Optional** | Service to call (e.g. media_player.media_play_pause) when action defined as call-service                                               | `none`      |
 | service_data    | object | **Optional** | Service data to include (e.g. entity_id: media_player.bedroom) when action defined as call-service                                     | `none`      |
-| haptic          | string | **Optional** | Haptic feedback _success, warning, failure, light, medium, heavy, selection_ | `none`      |
-| repeat          | number | **Optional** | How often to repeat the `hold_action` in milliseconds.                                                                                 | `none`       |
+| haptic          | string | **Optional** | Haptic feedback _success, warning, failure, light, medium, heavy, selection_                                                           | `none`      |
+| repeat          | number | **Optional** | How often to repeat the `hold_action` in milliseconds.                                                                                 | `none`      |
 
-## Starting a new card from boilerplate-card
 
-### Step 1
+### Language
 
-Click the "Use this template" button on the main page and clone the new repository to your machine
+The following languages are supported:
 
-### Step 2
+| Language  | Yaml value | Supported | Translated by                                                                       |
+| --------- | ---------- | --------- | ----------------------------------------------------------------------------------- |
+| English   | `en`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
+| French    | `fr`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
+| German    | `de`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
 
-Install necessary modules (verified to work in node 8.x)
-`yarn install` or `npm install`
 
-### Step 3
+## Thanks to
 
-Do a test lint & build on the project. You can see available scripts in the package.json
-`npm run build`
+- [@iantrich](https://www.github.com/iantrich) for the [boiler-plate card](https://github.com/custom-cards/boilerplate-card), which got me started
 
-### Step 4
 
-Search the repository for all instances of "TODO" and handle the changes/suggestions
+## Support
 
-### Step 5
+Clone and create a PR to help make the card even better.
 
-Customize to suit your needs and contribute it back to the community
-
-## Starting a new card from boilerplate-card with [devcontainer][devcontainer]
-
-Note: this is available only in vscode ensure you have the [Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed.
-
-1. Fork and clone the repository.
-2. Open a [devcontainer][devcontainer] terminal and run `npm start` when it's ready.
-3. The compiled `.js` file will be accessible on
-   `http://127.0.0.1:5000/boilerplate-card.js`.
-4. On a running Home Assistant installation add this to your Lovelace
-   `resources:`
-
-```yaml
-- url: 'http://127.0.0.1:5000/boilerplate-card.js'
-  type: module
-```
-
-_Change "127.0.0.1" to the IP of your development machine._
-
-### Bonus
-
-If you need a fresh test instance you can install a fresh Home Assistant instance inside the devcontainer as well.
-
-1. Run the command `container start`.
-2. Home Assistant will install and will eventually be running on port `9123`
-
-## [Troubleshooting](https://github.com/thomasloven/hass-config/wiki/Lovelace-Plugins)
-
-NB This will not work with node 9.x if you see the following errors try installing node 8.10.0
-
-```yarn install
-yarn install v1.3.2
-[1/4] 🔍  Resolving packages...
-warning rollup-plugin-commonjs@10.1.0: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-commonjs.
-[2/4] 🚚  Fetching packages...
-error @typescript-eslint/eslint-plugin@2.6.0: The engine "node" is incompatible with this module. Expected version "^8.10.0 || ^10.13.0 || >=11.10.1".
-error Found incompatible module
-info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
-```
-
-[commits-shield]: https://img.shields.io/github/commit-activity/y/custom-cards/boilerplate-card.svg?style=for-the-badge
-[commits]: https://github.com/custom-cards/boilerplate-card/commits/master
-[devcontainer]: https://code.visualstudio.com/docs/remote/containers
-[discord]: https://discord.gg/5e9yvq
-[discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
-[forum]: https://community.home-assistant.io/c/projects/frontend
-[license-shield]: https://img.shields.io/github/license/custom-cards/boilerplate-card.svg?style=for-the-badge
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/custom-cards/boilerplate-card.svg?style=for-the-badge
-[releases]: https://github.com/custom-cards/boilerplate-card/releases
+[releases-shield]: https://img.shields.io/github/release/t1gr0u/uv-index-card.svg?style=flat-square
+[releases-link]: https://github.com/t1gr0u/uv-index-card/releases/latest
+[release-date-shield]: https://img.shields.io/github/release-date/t1gr0u/uv-index-card?style=flat-square
+[latest-download-shield]: https://img.shields.io/github/downloads/t1gr0u/uv-index-card/latest/total?style=flat-square&label=downloads%20latest%20release
+[total-download-shield]: https://img.shields.io/github/downloads/t1gr0u/uv-index-card/total?style=flat-square&label=total%20views
+[traffic-link]: https://github.com/t1gr0u/uv-index-card/graphs/traffic
+[hacs-shield]: https://img.shields.io/badge/HACS-Default-orange.svg?style=flat-square
+[hacs-link]: https://github.com/custom-components/hacs
+[home-assistant-shield]: https://img.shields.io/badge/Home%20Assistant-visual%20editor/yaml-green?style=flat-square
+[home-assistant-link]: https://www.home-assistant.io/
+[license-shield]: https://img.shields.io/github/license/custom-cards/boilerplate-card.svg?style=flat-square
+[license-link]: LICENSE.md
+[activity-shield]: https://img.shields.io/github/commit-activity/y/t1gr0u/uv-index-card.svg?style=flat-square
+[activity-link]: https://github.com/t1gr0u/uv-index-card/commits/master
+[bugs-shield]: https://img.shields.io/github/issues/t1gr0u/uv-index-card/bug?color=red&style=flat-square&label=bugs
+[bugs-link]: https://github.com/t1gr0u/uv-index-card/labels/bug
+[enhancements-shield]: https://img.shields.io/github/issues/t1gr0u/uv-index-card/enhancement?color=blue&style=flat-square&label=enhancements
+[enhancement-link]: https://github.com/t1gr0u/uv-index-card/labels/enhancement
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg?style=flat-square
+[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=flat-square
+[forum-link]: https://community.home-assistant.io/t/uv-index-card-points-you-in-the-right-direction/217909
