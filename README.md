@@ -120,4 +120,4 @@ Clone and create a PR to help make the card even better.
 [enhancement-link]: https://github.com/t1gr0u/uv-index-card/labels/enhancement
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg?style=flat-square
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=flat-square
-[forum-link]: https://community.home-assistant.io/t/uv-index-card-points-you-in-the-right-direction/217909
+[forum-link]: https://community.home-assistant.io/t/uv-index-card/543446
