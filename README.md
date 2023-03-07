@@ -21,6 +21,8 @@ A custom Lovelace card that displays the UV index and risk level in [Home Assist
 1. Force refresh the Home Assistant page (<kbd>Ctrl</kbd> + <kbd>F5</kbd>)
 1. Add uv-index-card to your page
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=t1gr0u&repository=uv-index-card&category=plugin)
+
 ### Manual
 
 1. Download the 'uv-index-card.js' from the latest [release](https://github.com/t1gr0u/uv-index-card/releases) (with right click, save link as)
