@@ -16,6 +16,8 @@ import { actionHandler } from './action-handler-directive';
 import { CARD_VERSION } from './const';
 import { localize } from './localize/localize';
 
+import './editor';
+
 /* eslint no-console: 0 */
 console.info(
   `%c  UV-INDEX-CARD \n%c  ${localize('common.version')} ${CARD_VERSION}    `,
@@ -36,7 +38,7 @@ console.info(
 @customElement('uv-index-card')
 export class UVIndexCard extends LitElement {
   public static async getConfigElement(): Promise<LovelaceCardEditor> {
-    await import('./editor');
+    // await import('./editor');
     return document.createElement('uv-index-card-editor');
   }
 
