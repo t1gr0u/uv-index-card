@@ -1,7 +1,7 @@
 {
     "common": {
       "version": "Version",
-      "invalid_configuration": "Invalid configuration",
+      "invalid_configuration": "Ungültige Konfiguration",
       "show_warning": "Warnung anzeigen",
       "show_error": "Fehler anzeigen",
       "uv_index": "UV-Index",
