@@ -86,12 +86,12 @@ entity: sensor.weather_station_uv
 
 The following languages are supported:
 
-| Language  | Yaml value | Supported | Translated by                                                                       |
-| --------- | ---------- | --------- | ----------------------------------------------------------------------------------- |
-| English   | `en`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
-| French    | `fr`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
-| German    | `de`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
-| Italian   | `it`       | v?.?.?    | [@SiriosDev](https://github.com/SiriosDev)                                                |
+| Language  | Yaml Value | Supported Since | Translated by                                                                       |
+| --------- | ---------- | --------------- | ----------------------------------------------------------------------------------- |
+| English   | `en`       | v1.0.0          | [@t1gr0u](https://github.com/t1gr0u)                                                |
+| French    | `fr`       | v1.0.0          | [@t1gr0u](https://github.com/t1gr0u)                                                |
+| German    | `de`       | v1.0.0          | [@t1gr0u](https://github.com/t1gr0u)                                                |
+| Italian   | `it`       | v?.?.?          | [@SiriosDev](https://github.com/SiriosDev)                                          |
 
 
 ## Thanks to
