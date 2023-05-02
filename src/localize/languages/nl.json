@@ -2,7 +2,7 @@
   "common": {
     "version": "Versie",
     "invalid_configuration": "Ongeldige configuratie",
-    "show_warning": "Toon waarshuwing",
+    "show_warning": "Toon waarschuwing",
     "show_error": "Toon foutmelding",
     "uv_index": "UV index",
     "uv_risk": "UV risico"
