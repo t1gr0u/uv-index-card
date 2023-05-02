@@ -88,7 +88,7 @@ The following languages are supported:
 
 | Language  | Yaml value | Supported | Translated by                                                                       |
 | --------- | ---------- | --------- | ----------------------------------------------------------------------------------- |
-| Dutch     | `nl`       | v?.?.?    | [@WoBBeLNL] https://github.com/WoBBeLnl)                                            |
+| Dutch     | `nl`       | v?.?.?    | [@WoBBeLNL](https://github.com/WoBBeLnl)                                            |
 | English   | `en`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
 | French    | `fr`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
 | German    | `de`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
