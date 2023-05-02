@@ -93,6 +93,7 @@ The following languages are supported:
 | French    | `fr`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
 | German    | `de`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
 
+
 ## Thanks to
 
 - [@iantrich](https://www.github.com/iantrich) for the [boiler-plate card](https://github.com/custom-cards/boilerplate-card), which got me started
