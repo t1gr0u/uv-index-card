@@ -9,6 +9,7 @@ import { formfieldDefinition } from '../elements/formfield';
 import { selectDefinition } from '../elements/select';
 import { switchDefinition } from '../elements/switch';
 import { textfieldDefinition } from '../elements/textfield';
+import { CARD_LANGUAGES } from './localize/localize';
 
 @customElement('uv-index-card-editor')
 export class UVIndexCardEditor extends ScopedRegistryHost(LitElement) implements LovelaceCardEditor {
@@ -49,6 +50,10 @@ export class UVIndexCardEditor extends ScopedRegistryHost(LitElement) implements
     return this._config?.entity || '';
   }
 
+  get _language(): string {
+    return this._config?.language || '';
+  }
+
   get _show_warning(): boolean {
     return this._config?.show_warning || false;
   }
@@ -85,6 +90,19 @@ export class UVIndexCardEditor extends ScopedRegistryHost(LitElement) implements
         .configValue=${'name'}
         @input=${this._valueChanged}
       ></mwc-textfield>
+      <mwc-select
+        naturalMenuWidth
+        fixedMenuPosition
+        label="Language (Optional)"
+        .configValue=${'language'}
+        .value=${this._language}
+        @selected=${this._valueChanged}
+        @closed=${(ev) => ev.stopPropagation()}
+      >
+        ${CARD_LANGUAGES.map((languageItem) => {
+          return html`<mwc-list-item .value=${languageItem}>${languageItem}</mwc-list-item>`;
+        })}
+      </mwc-select>
       <mwc-formfield .label=${`Toggle warning ${this._show_warning ? 'off' : 'on'}`}>
         <mwc-switch
           .checked=${this._show_warning !== false}

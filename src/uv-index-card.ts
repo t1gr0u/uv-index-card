@@ -82,11 +82,11 @@ export class UVIndexCard extends LitElement {
   protected render(): TemplateResult | void {
     // TODO Check for stateObj or other necessary things and render a warning if missing
     if (this.config.show_warning) {
-      return this._showWarning(localize('common.show_warning'));
+      return this._showWarning(localize('common.show_warning', '', '', this.config.language));
     }
 
     if (this.config.show_error) {
-      return this._showError(localize('common.show_error'));
+      return this._showError(localize('common.show_error', '', '', this.config.language));
     }
 
     const entityId = this.config.entity;
@@ -128,7 +128,7 @@ export class UVIndexCard extends LitElement {
       >
         <div style="display: flex;">
           <div style="width: 50%; padding-left: 30px;">
-            <svg width="162px" height="136px" viewBox="0 0 162 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="80%" viewBox="0 0 162 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <title>UV</title>
               <g id="UV-Index-Triangle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <polygon points="81.9537723 2.99975159 77.2979826 10.4602611 86.4956236 10.4362484" fill="${stateValue >= 12 ? colours.extreme : colours.idle}"></polygon>
@@ -150,14 +150,14 @@ export class UVIndexCard extends LitElement {
           <div>
             <div>
               <p>
-                <span style="font-weight: bold;">${localize('common.uv_index')}</span><br/>
+                <span style="font-weight: bold;">${localize('common.uv_index', '', '', this.config.language)}</span><br/>
                 ${stateValue}
               </p>
             </div>
             <div>
               <p>
-                <span style="font-weight: bold;">${localize('common.uv_risk')}</span><br/>
-                ${localize(uvRiskStr)}
+                <span style="font-weight: bold;">${localize('common.uv_risk', '', '', this.config.language)}</span><br/>
+                ${localize(uvRiskStr, '', '', this.config.language)}
               </p>
             </div>
           </div>

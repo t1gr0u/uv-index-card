@@ -65,6 +65,7 @@ entity: sensor.weather_station_uv
 | show_error        | boolean | **Optional** | Show what an error looks like for the card  | `false`             |
 | show_warning      | boolean | **Optional** | Show what a warning looks like for the card | `false`             |
 | entity            | string  | **Required** | Home Assistant entity ID.                   | `none`              |
+| language          | string  | **Optional** | The 2 character that determines the language| `en`                |
 | tap_action        | object  | **Optional** | Action to take on tap                       | `action: more-info` |
 | hold_action       | object  | **Optional** | Action to take on hold                      | `none`              |
 | double_tap_action | object  | **Optional** | Action to take on double tap                | `none`              |
