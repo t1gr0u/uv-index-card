@@ -93,6 +93,7 @@ The following languages are supported:
 | French    | `fr`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
 | German    | `de`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
 | Italian   | `it`       | v1.2.0    | [@SiriosDev](https://github.com/SiriosDev)                                          |
+| Portuguese| `pt`       | v1.2.0    | [@ViPeR5000](https://github.com/viper5000)                                          |
 
 
 ## Thanks to
