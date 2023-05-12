@@ -1,0 +1,17 @@
+{
+  "common": {
+    "version": "Verzió",
+    "invalid_configuration": "Érvénytelen konfiguráció",
+    "show_warning": "Figyelmeztetések megjelenítése",
+    "show_error": "Hibák megjelenítése",
+    "uv_index": "UV Index",
+    "uv_risk": "UV kockázat"
+  },
+  "uv_levels": {
+    "low": "Alacsony",
+    "moderate": "Mérsékelt",
+    "high": "Magas",
+    "very_high": "Nagyon magas",
+    "extreme": "Extrém"
+  }
+}
