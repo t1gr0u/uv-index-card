@@ -1,20 +1,24 @@
+import * as cs from "./languages/cs.json";
 import * as de from './languages/de.json';
 import * as en from './languages/en.json';
 import * as fr from './languages/fr.json';
-import * as pt from './languages/pt.json';
-import * as nl from './languages/nl.json';
+import * as hu from './languages/hu.json';
 import * as it from "./languages/it.json";
-import * as cs from "./languages/cs.json";
+import * as nl from './languages/nl.json';
+import * as pt from './languages/pt.json';
+import * as sv from "./languages/sv.json";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const languages: any = {
+  cs: cs,
   de: de,
   en: en,
   fr: fr,
-  pt: pt,
-  nl: nl,
+  hu: hu,
   it: it,
-  cs: cs,
+  nl: nl,
+  pt: pt,
+  sv: sv,
 };
 
 export const CARD_LANGUAGES = [...Object.keys(languages), ''].sort();
