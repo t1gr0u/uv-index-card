@@ -89,14 +89,24 @@ The following languages are supported:
 
 | Language  | Yaml value | Supported | Translated by                                                                       |
 | --------- | ---------- | --------- | ----------------------------------------------------------------------------------- |
-| Czech     | `cs`       | v1.3.0    | [@MiisaTrAnCe](https://github.com/MiisaTrAnCe)                                      |
+| Czech     | `cs`       | v1.2.1    | [@MiisaTrAnCe](https://github.com/MiisaTrAnCe)                                      |
 | Dutch     | `nl`       | v1.2.0    | [@WoBBeLNL](https://github.com/WoBBeLnl)                                            |
 | English   | `en`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
 | French    | `fr`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
 | German    | `de`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
+| Hungarian | `hu`       | v1.2.1    | [@erelke](https://github.com/erelke)                                                |
 | Italian   | `it`       | v1.2.0    | [@SiriosDev](https://github.com/SiriosDev)                                          |
 | Portuguese| `pt`       | v1.2.0    | [@ViPeR5000](https://github.com/viper5000)                                          |
+| Swedish   | `sv`       | v1.2.1    | [@el97](https://github.com/el97)                                                    |
 
+#### How to add a language
+
+If you wish to add a language please follow these steps:
+
+* Go into the `src/localize/languages/` folder
+* Duplicate the `en.json` and name it as the language that you would like to add by following the [2 characters ISO language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+* Then modify the `localize.ts` file, located in `src/localize/` to include your language file.
+* Update the `Readme.md`, found in `src/` to include your language and your Github username in the language table.
 
 ## Thanks to
 
