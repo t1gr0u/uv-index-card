@@ -89,6 +89,7 @@ The following languages are supported:
 
 | Language  | Yaml value | Supported | Translated by                                                                       |
 | --------- | ---------- | --------- | ----------------------------------------------------------------------------------- |
+| Catalan   | `ca`       | v1.2.2    | [@carlesfernandez](https://github.com/carlesfernandez)                              |
 | Czech     | `cs`       | v1.2.1    | [@MiisaTrAnCe](https://github.com/MiisaTrAnCe)                                      |
 | Dutch     | `nl`       | v1.2.0    | [@WoBBeLNL](https://github.com/WoBBeLnl)                                            |
 | English   | `en`       | v1.0.0    | [@t1gr0u](https://github.com/t1gr0u)                                                |
