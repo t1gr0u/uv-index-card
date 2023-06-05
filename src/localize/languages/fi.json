@@ -1,0 +1,17 @@
+{
+  "common": {
+    "version": "Versio",
+    "invalid_configuration": "Väärä konfikuraatio",
+    "show_warning": "Näytä varoitus",
+    "show_error": "Näytä virhe",
+    "uv_index": "UV Indeksi",
+    "uv_risk": "UV Riski"
+  },
+  "uv_levels": {
+    "low": "Matala",
+    "moderate": "Kohtalainen",
+    "high": "Korkea",
+    "very_high": "Erittäin korkea",
+    "extreme": "Äärimmäinen"
+  }
+}
