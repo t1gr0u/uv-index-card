@@ -1,0 +1,17 @@
+{
+  "common": {
+    "version": "Versjon",
+    "invalid_configuration": "Ugyldig konfigurasjon",
+    "show_warning": "Vis advarsel",
+    "show_error": "Vis feil",
+    "uv_index": "UV-indeks",
+    "uv_risk": "UV-risiko"
+  },
+  "uv_levels": {
+    "low": "Lav",
+    "moderate": "Moderat",
+    "high": "Høy",
+    "very_high": "Veldig høy",
+    "extreme": "Extremt høy"
+  }
+}
