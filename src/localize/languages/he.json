@@ -1,0 +1,17 @@
+{
+  "common": {
+    "version": "Version",
+    "invalid_configuration": "הגדרות לא נכונות",
+    "show_warning": "הצגת שגיאה",
+    "show_error": "הצגת שגיאה",
+    "uv_index": "רמת קרינת UV",
+    "uv_risk": "סיכון מקרינת UV"
+  },
+  "uv_levels": {
+    "low": "נמוך",
+    "moderate": "בינוני",
+    "high": "גבוה",
+    "very_high": "גבוה מאוד",
+    "extreme": "קיצוני"
+  }
+}
