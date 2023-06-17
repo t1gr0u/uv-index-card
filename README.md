@@ -98,6 +98,7 @@ The following languages are supported:
 | Italian   | `it`       | v1.2.0    | [@SiriosDev](https://github.com/SiriosDev)                                          |
 | Portuguese| `pt`       | v1.2.0    | [@ViPeR5000](https://github.com/viper5000)                                          |
 | Swedish   | `sv`       | v1.2.1    | [@el97](https://github.com/el97)                                                    |
+| Hebrew    | `he`       | v1.2.1    | [@EarthGoodness](https://github.com/EarthGoodness)                                  |
 
 #### How to add a language
 
