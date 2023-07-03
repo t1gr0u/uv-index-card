@@ -1,7 +1,7 @@
 {
   "common": {
     "version": "Versión",
-    "invalid_configuration": "Configuración No Válida",
+    "invalid_configuration": "Configuración no válida",
     "show_warning": "Mostrar Advertencia",
     "show_error": "Mostrar Error",
     "uv_index": "Índice UV",
