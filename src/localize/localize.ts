@@ -6,6 +6,7 @@ import * as hu from './languages/hu.json';
 import * as it from "./languages/it.json";
 import * as nl from './languages/nl.json';
 import * as pt from './languages/pt.json';
+import * as sk from './languages/sk.json';
 import * as sv from "./languages/sv.json";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -18,6 +19,7 @@ const languages: any = {
   it: it,
   nl: nl,
   pt: pt,
+  sk: sk,
   sv: sv,
 };
 
