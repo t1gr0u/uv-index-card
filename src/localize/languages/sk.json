@@ -1,0 +1,17 @@
+{
+  "common": {
+    "version": "Verzia",
+    "invalid_configuration": "Neplatná konfigurácia",
+    "show_warning": "Zobraziť varovanie",
+    "show_error": "Zobraziť chybu",
+    "uv_index": "UV Index",
+    "uv_risk": "UV Riziko"
+  },
+  "uv_levels": {
+    "low": "Nízke",
+    "moderate": "Stredné",
+    "high": "Vysoké",
+    "very_high": "Veľmi vysoké",
+    "extreme": "Extrémne"
+  }
+}
