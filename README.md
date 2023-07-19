@@ -97,6 +97,7 @@ The following languages are supported:
 | Hungarian | `hu`       | v1.2.1    | [@erelke](https://github.com/erelke)                                                |
 | Italian   | `it`       | v1.2.0    | [@SiriosDev](https://github.com/SiriosDev)                                          |
 | Portuguese| `pt`       | v1.2.0    | [@ViPeR5000](https://github.com/viper5000)                                          |
+| Slovak    | `sk`       | v1.2.1    | [@Koky05](https://github.com/koky05)                                                |
 | Swedish   | `sv`       | v1.2.1    | [@el97](https://github.com/el97)                                                    |
 
 #### How to add a language
